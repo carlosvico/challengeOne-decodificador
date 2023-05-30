@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Flex Box</title>
+   <title>Encriptador de Texto</title>
    <link rel="stylesheet" href="estilo.css">
    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
@@ -18,17 +18,16 @@
       <div class="container">
          <!-----------Entrada de dados ------------->
          <div class="display-left">
-            <h1>Decodificador de texto</h1>
+            <h1>Encriptador de texto</h1>
             <div class="text">
-               <textarea name="entrada" id="entrada" cols="90" rows="5" placeholder="teste">
-               </textarea>
+               <textarea id="entrada" cols="20" rows="10" placeholder="Digite o texto aqui"></textarea>
                <div class="aviso">
                   <i class="fa fa-cog fa-spin fa-lg fa-fw" aria-hidden="true"></i>
                   <p>Apenas letras minúsculas e sem acento</p>
                </div>
                <div class="btn">
-                  <button type="submit" class="btn-item">Criptografar</button>
-                  <button type="submit" class="btn-item">Decriptografar</button>
+                  <button type="button" class="btn-item" onclick="Encriptar()">Encriptar</button>
+                  <button type="button" class="btn-item" onclick="Decriptar()">Descriptar</button>
                </div>
             </div>
          </div>
@@ -36,30 +35,23 @@
          <!-----------Saída de dados ------------->
          <div class="display-right">
             <div class="card">
-               <img src="./assets/img-display.svg" alt="imagem">
-               <p id="output-text">Nenhuma mensagem encontrada</p>
-               <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-               <button type="submit" class="btn-item">Copiar</button>
+               <textarea id="saida" class="saida invisible" cols="20" rows="10" readonly></textarea>
+               <img id="display-image" src="./assets/img-display.svg" alt="imagem">
+               <p id="output-text">Nenhum resultado</p>
+               <p>Digite um texto para encriptar ou descriptar</p>
+               <button type="button" class="btn-item" onclick="btnCopiar()">Copiar</button>
             </div>
          </div>
-
       </div>
-
    </main>
 
    <footer>
       <div class="rodape">
-         <p>desenvolvido por Carlos Vieira</p>
+         <p>Desenvolvido por Carlos Vieira</p>
       </div>
    </footer>
 
+   <script src="script.js"></script>
 </body>
 
 </html>
-
-<!--
-   main-login  = container
-   left-login  = display-left
-   right-login = display-right
-   card-login  = display-in
-   -->

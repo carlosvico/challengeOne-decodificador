@@ -12,10 +12,9 @@ body {
    /* definindo paddin de 42px em toda a área da tela */
    padding: 42px;
    font-family: 'Inter', sans-serif;
-
 }
 
-/* tornando os elemento flex, e setando o alinhamento centralizado de seus itens tanto horizontal quanto verticalmente  */
+/* aqui torno os elemento flex, e setando o alinhamento centralizado de seus itens tanto horizontal quanto verticalmente  */
 .container,
 .display-left,
 .display-right,
@@ -27,7 +26,6 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-
 }
 
 .fa {
@@ -38,14 +36,12 @@ header img {
    position: absolute;
    top: 51px;
    left: 50px;
-
 }
 
 .container {
    /* definindo toda a area ocupada pelos elemento na tela */
    width: 100%;
    height: 100%;
-
 }
 
 .text {
@@ -53,7 +49,7 @@ header img {
    padding: 20px;
 }
 
-.text>textarea {
+textarea {
    width: 100%;
    border: none;
    border-radius: 10px;
@@ -63,7 +59,8 @@ header img {
    box-shadow: 3px 7px 23px -6px rgba(0, 0, 0, 0.75);
    text-align: center;
    background: #514869;
-   color: tomato
+   color: tomato;
+   margin-top: -30px;
 }
 
 /*  posicionamento do conteudo em coluna */
@@ -73,17 +70,20 @@ header img {
    flex-direction: column;
 }
 
+.invisible {
+   display: none;
+}
+
 .display-left {
    background-color: #2d263d;
-   /* setando o card para 80% da largura da div pai */
+   /* estou setando o card para 80% da largura da div pai */
    width: 80%;
    height: 80vh;
    padding: 20px;
    border-radius: 20px 0 0 20px;
-
 }
 
-.display-left>h1 {
+.display-left > h1 {
    position: absolute;
    top: 150px;
    font-weight: 700;
@@ -96,13 +96,10 @@ header img {
 }
 
 .btn {
-   /* flex-wrap: wrap; */
    position: absolute;
-   margin-bottom: -500px;
    width: 20%;
    gap: 10px;
-   margin-top: -162px;
-
+   margin-top: 398px
 }
 
 .display-right {
@@ -112,7 +109,6 @@ header img {
    height: 80vh;
    border-radius: 0 20px 20px 0;
    padding: 0 20px;
-
 }
 
 .display-left,
@@ -134,7 +130,12 @@ header img {
    box-shadow: 3px 7px 23px -6px rgba(0, 0, 0, 0.75);
    transition: .3s ease;
    color: tomato;
-
+}
+#output-text {
+   margin-top: 20px;
+   margin-bottom: 10px;
+   color: tomato;
+   text-decoration: dotted;
 }
 
 .btn-item:hover {
@@ -145,15 +146,12 @@ header img {
 .rodape {
    position: relative;
    bottom: -20px;
-
    background-color: #2d263d;
    margin-top: 10px;
    height: 5vh;
    width: 100%;
    border-radius: 15px;
-
 }
-
 
 /* boxshadow */
 /* https://www.cssmatic.com/box-shadow */
@@ -170,14 +168,15 @@ header img {
       border-radius: 0;
    }
 
-
    .container {
       flex-wrap: wrap;
    }
 
    .btn {
-      
       flex-wrap: wrap;
    }
 
+   .display-left > h1 {
+      top: 100px;
+   }
 }
