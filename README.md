@@ -1,8 +1,8 @@
-# challengeOne-decodificador
+# ChallengeOne
 
 
 
-# Encriptador de Texto
+## Decodificador de Texto
 
 O Encriptador de Texto é um programa simples desenvolvido em HTML, CSS e JavaScript que permite encriptar e decriptar textos. Ele utiliza uma matriz de substituição para trocar letras em um texto, proporcionando uma forma de codificação básica.
 E faz par
